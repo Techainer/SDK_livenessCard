@@ -1,0 +1,9 @@
+include ':app'
+///home/hieunt/Card_Liveness_SDK/card_liveness
+setBinding(new Binding([gradle: this]))                                // new
+evaluate(new File(                                                     // new
+        settingsDir.parentFile,                                              // new
+        './card_liveness/.android/include_flutter.groovy'                         // new
+))
+
+rootProject.name = "host_app"
